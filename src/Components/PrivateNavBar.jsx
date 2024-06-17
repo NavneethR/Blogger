@@ -1,8 +1,9 @@
 import {NavLink} from 'react-router-dom'
+import "../assets/css/main.css"
 
 const PrivateNavBar = () => {
     return(
-        <nav>
+        <nav className='primary-link'>
             <NavLink to='/'>Home</NavLink>
             <NavLink to='/categories'>Categories</NavLink>
             <NavLink to='/posts'>Posts</NavLink>

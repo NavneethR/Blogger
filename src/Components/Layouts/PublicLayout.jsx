@@ -1,8 +1,8 @@
 import {Navigate,Outlet} from "react-router-dom"; 
-import PrivateNavBar from "../PrivateNavBar";
-i
+import PublicNavBar from "../PublicNavBar";
+
 const PublicLayout = () => {
-    const auth = true;
+    const auth = false;
 
     if(auth){
         return <Navigate to="/"/>
@@ -10,7 +10,9 @@ const PublicLayout = () => {
 
     return (
         <div>
-            <PrivateNavBar/>
+            <div className="primary-link">
+                <PublicNavBar/>
+            </div>
             <Outlet/>
         </div>
     )
